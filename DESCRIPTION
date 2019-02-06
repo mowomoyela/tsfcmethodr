@@ -1,0 +1,36 @@
+Package: tsfcmethodr
+Type: Package
+Title: Classification methods to predict best performing forecasting method of a ts
+Version: 1.0.0
+Depends: R (>= 3.5.0)
+Author: Moritz Witte
+Maintainer: Moritz Witte <m_witt41@uni-muenster.de>
+Description: Provides four different classification machine learning methods and one C5.0 rule model to predict the best performing forecasting method for time series. The four different classification methods are: xgboost, cat boost, svm and ann. This package contains labeled time series data to train the models for the prediction of new time series data.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    mltools,
+    lubridate,
+    caret,
+    data.table,
+    catboost,
+    xgboost,
+    tstaxonomyr,
+    C50,
+    imputeTS,
+    forecast,
+    mgcv,
+    xts,
+    fields,
+    tseriesChaos,
+    tseries,
+    dtw,
+    peakPick,
+    car,
+    outliers,
+    pastecs,
+    pracma,
+    e1071,
+    stringr

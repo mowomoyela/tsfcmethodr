@@ -1,13 +1,27 @@
+---
+output: github_document
+editor_options:
+  chunk_output_type: console
+---
 
-tsfcmethodr
-===========
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  cache = TRUE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+# tsfcmethodr
 
 Provides four different classification machine learning methods and one C5.0 rule model to predict the best performing forecasting method for time series. The four different classification methods are: xgboost, cat boost, svm and ann. This package contains labeled time series data to train the models for the prediction of new time series data.
 
-Usage
------
+## Usage
 
-``` r
+```{r usage, eval = FALSE}
 # Initialize the R package
 library(tsfcmethodr)
 # Example of a xgboost classification model with the basic ts 
@@ -31,29 +45,27 @@ library(tsfcmethodr)
   prediction
 ```
 
-Installation
-------------
+## Installation
 
 You can install the **development** version 1.0.0 from [Github](https://github.com/mowomoyela/tsfcmethodr) with:
 
-``` r
+```{r gh-installation, eval = FALSE}
 devtools::install_github("mowomoyela/tsfcmethdr")
 ```
 
-Overview
---------
+
+## Overview
 
 All provided functions of this package:
 
--   Version 1.0.0
-    -   train\_svm: Generates a classification svm trainings model.
-    -   train\_ann: Generates a classification ann trainings model.
-    -   train\_xgb: Generates a classification xgboost trainings model.
-    -   train\_c50\_rule\_model: Generates a C5.0 rule model.
-    -   train\_catboost: Generates a classification catboost trainings model.
-    -   predict\_fc\_model: Predicts the best performing forecasting method for a new time series.
+* Version 1.0.0
+    * train_svm: Generates a classification svm trainings model.
+    * train_ann: Generates a classification ann trainings model.
+    * train_xgb: Generates a classification xgboost trainings model.
+    * train_c50_rule_model: Generates a C5.0 rule model.
+    * train_catboost: Generates a classification catboost trainings model.
+    * predict_fc_model: Predicts the best performing forecasting method for a new time series.
 
-License
--------
+## License
 
 This package is free and open source software, licensed under GPL-2.

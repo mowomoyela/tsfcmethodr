@@ -128,3 +128,31 @@
 #' @format fitted xgboost model from the caret R packet. The method is
 #' called 'xgbTree'. It is trained by cross-validation.
 "fitted_ts_fs_taxonomy_xgb_model"
+
+#' A fitted classification c5.0 rule model from the c50 R package
+#'
+#' A fitted classification xgboost model from the c50 R package based on the
+#' two .R files: "ts_fs_taxonomy_results" and "ts_fc_evaluation_results"
+#' from this package. The "ts_fs_taxonomy_results" are applied as training
+#' features and the "ts_fc_evaluation_results" as prediction label. Thus the
+#' model is able to predict for new "ts_fs_taxonomy_results" data the best
+#' performing forecasting method out of the seven possible from the
+#' "ts_fc_evaluation_results" file.
+#'
+#' @format fitted c50 model from the c50 R package The method is
+#' called 'c50'.
+"fitted_ts_fs_taxonomy_c50_model"
+
+#' A fitted classification c5.0 rule model from the c50 R package
+#'
+#' A fitted classification xgboost model from the caret R packe based on the
+#' two .R files: "ts_taxonomy_results" and "ts_fc_evaluation_results"
+#' from this package. The "ts_taxonomy_results" are applied as training features
+#' and the "ts_fc_evaluation_results" as prediction label. Thus the model is
+#' able to predict for new "ts_taxonomy_results" data the best performing
+#' forecasting method out of the seven possible from the
+#' "ts_fc_evaluation_results" file.
+#'
+#' @format fitted c50 model from the c50 R package The method is
+#' called 'c50'.
+"fitted_ts_taxonomy_c50_model"
